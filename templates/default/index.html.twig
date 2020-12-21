@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}TODO App{% endblock %}
+
+{% block stylesheets %}
+{#    <link rel="stylesheet" href="{{ asset('build/app.css') }}">#}
+    {{ encore_entry_link_tags('app') }}
+{% endblock %}
+
+{% block javascripts %}
+{#    <script src="{{ asset('build/app.js') }}"></script>#}
+{{ encore_entry_script_tags('app') }}
+{% endblock %}
+
+{% block body %}
+    <div id="app"></div>
+{% endblock %}
